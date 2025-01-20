@@ -1,0 +1,14 @@
+
+<div class='container text-center' [ngClass]="buttonClass">
+  <div class="row">
+    <div class="col-6">
+      <p>{{ number() }}</p>
+      <p>{{ doubleCount() }}</p>
+    </div>
+    <div class="col-6">
+      <button (click)="increment()">Increment</button>
+    </div>
+    <a routerLink="src/app/components/cart" (click)="hide()">Cart</a>
+  </div>
+</div>
+

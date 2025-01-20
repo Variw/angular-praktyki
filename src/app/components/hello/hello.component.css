@@ -1,0 +1,12 @@
+p {
+  color: chocolate;
+}
+
+.off {
+  display: none;
+}
+.on{
+  display: block;
+}
+
+
