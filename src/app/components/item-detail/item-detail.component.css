@@ -1,0 +1,28 @@
+.popup{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+}
+.visible-popup{
+  width: 50%;
+  height: 80%;
+  background-color: rgba(30,30,30,0.98);
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+}
+.diabloDescription{
+  font-family: Exocet;
+  color: rgb(79,71,181);
+  font-size: calc(18px + 0.6vw );
+}
+.diabloDescriptionHeader{
+  font-family: Exocet;
+  color: rgb(144, 133, 88);
+  font-size: calc(22px + 0.6vw );
+}
+

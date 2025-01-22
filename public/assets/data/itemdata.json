@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "The oculus",
+    "description": "<p>+3 To Sorceress Skill Levels</p><p>+5 To Mana After Each Kill</p><p>All Resistances +20</p><p>25% Chance To Cast Level 1 Teleport When Struck</p><p>+30% Faster Cast Rate</p><p>+20 To Vitality</p><p>+20 To Energy</p><p>+20% Enhanced Defense</p><p>50% Better Chance Of Getting Magic Items</p></p>"
+  },
+  {
+    "id": 2,
+    "name": "Harlequin Crest",
+    "description": "<p>+2 To All Skills</p><p>+1-148 To Life (+1.5 Per Character Level)</p><p>+1-148 To Mana (+1.5 Per Character Level)</p><p>Physical Damage Received Reduced By 10%</p><p>50% Better Chance of Getting Magic Items</p><p>+2 To All Attributes</p>"
+  }
+]
