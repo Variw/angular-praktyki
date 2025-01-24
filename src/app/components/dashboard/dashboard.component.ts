@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-import {delay, map, switchMap} from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { AsyncPipe } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
