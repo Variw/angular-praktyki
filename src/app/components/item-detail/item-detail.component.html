@@ -1,8 +1,8 @@
 <div class="border-black popup" (click)="navigateToAnotherRoute()">
   <div class="visible-popup text-center">
     <div>
-      <div [innerHTML]="itemData.name" class="diabloDescriptionHeader"></div>
-      <div [innerHTML]="itemData.description" class="diabloDescription"></div>
+      <div [innerHTML]="dataModule.items[dataModule.data].name" class="diabloDescriptionHeader"></div>
+      <div [innerHTML]="dataModule.items[dataModule.data].description" class="diabloDescription"></div>
     </div>
   </div>
 </div>

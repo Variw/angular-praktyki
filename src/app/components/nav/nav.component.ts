@@ -26,7 +26,7 @@ import {DataModule} from '../data/data.module';
 })
 export class NavComponent {
   private breakpointObserver = inject(BreakpointObserver);
-  protected data = inject(DataModule);
+  protected dataModule = inject(DataModule);
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

@@ -1,40 +1,34 @@
+
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
+  <div>
+    <h1 class="mat-h1">D2 items shop</h1>
+     <input type="text" placeholder="Search items" #filter>
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+  </div>
   <mat-grid-list cols="2" rowHeight="350px">
-    @for (card of cards | async; track card) {
+    @for (card of filteredCards | async; track card) {
       <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
         <mat-card class="dashboard-card">
           <mat-card-header>
             <mat-card-title>
-              {{card.title}}
+              {{dataModule.items[card.id-1].name}}
               <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                <mat-icon>more_vert</mat-icon>
+                <mat-icon>more_verst</mat-icon>
               </button>
               <mat-menu #menu="matMenu" xPosition="before">
                 <button mat-menu-item>Buy</button>
               </mat-menu>
             </mat-card-title>
           </mat-card-header>
-          @if (card.title === "Card 1"){
-            <mat-card-content class="dashboard-card-content">
-              <div>Oculus</div>
-
-              <div><img src="/assets/items/oculus.webp" alt="Oculus" width="100em" class="item" (click)="saveData(document.getElementById('1'))" id='1' routerLink = "src/app/components/item-detail"></div>
-              <button (click)="cartItem(document.getElementById('1'))">BUY</button>
-            </mat-card-content>
-          } @else if (card.title === "Card 2"){
-            <mat-card-content class="dashboard-card-content">
-              <div>Harlequin Crest (Shako)</div>
-              <div><img src="/assets/items/harlequin_crest.webp" alt="Shako" width= "100em" class="item" (click)="saveData(document.getElementById('2'))" id='2' routerLink = "src/app/components/item-detail"></div>
-              <button (click)="cartItem(document.getElementById('2'))">BUY</button>
-            </mat-card-content>
-          } @else {
-            <mat-card-content class="dashboard-card-content">
-              <div>Card Content Here was?</div>
-            </mat-card-content>
-          }
+          <mat-card-content class="dashboard-card-content">
+            <div>
+              <div><img src="{{dataModule.items[card.id-1].file}}"  alt="Item" width= "100em" class="item" (click)="saveData(document.getElementById((card.id-1).toString()))" id="{{card.id-1}}" routerLink = "src/app/components/item-detail"></div>
+              <button (click)="cartItem(document.getElementById((card.id-1).toString()))">Add to cart</button>
+            </div>
+          </mat-card-content>
         </mat-card>
       </mat-grid-tile>
     }
   </mat-grid-list>
 </div>
+
