@@ -2,8 +2,17 @@
   <div class="visible-popup text-center">
     <div>
       <div [innerHTML]="dataModule.items[dataModule.data].name" class="diabloDescriptionHeader"></div>
-      <div [innerHTML]="dataModule.items[dataModule.data].description" class="diabloDescription"></div>
-    </div>
+      <div [innerHTML]="dataModule.items[dataModule.data].type" class="diabloDescriptionHeader"></div>
+      <div class="diabloDescriptionCommon">
+        <p *ngFor="let item of dataModule.items[dataModule.data].stats.common">
+          {{ item }}
+        </p>
+      </div>
+      <div class="diabloDescriptionMagic">
+        <p *ngFor="let item of dataModule.items[dataModule.data].stats.magic">
+          {{ item }}
+        </p>
+      </div>    </div>
   </div>
 </div>
 <router-outlet />

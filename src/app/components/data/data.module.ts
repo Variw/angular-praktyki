@@ -3,8 +3,16 @@ import {from, Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 
 type itemNumber = {id: number, count: number};
-type itemInformation = { id: number, name: string, file: string, description: string };
-
+type itemInformation = {
+  id: number,
+  name: string,
+  type: string,
+  file: string,
+  stats: {
+    common: string[],
+    magic: string[]
+  }
+};
 
 @Injectable({
   providedIn: 'root',

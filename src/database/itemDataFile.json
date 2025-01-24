@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "name": "The Oculus",
+      "type": "Swirling Crystal",
+      "file": "/assets/items/oculus.webp",
+      "stats": {
+        "common": [
+          "One-Hand Damage: 18 To 42",
+          "Required Level: 42",
+          "Durability: 50",
+          "Staff Class - Normal Attack Speed"
+        ],
+        "magic": [
+          "(Sorceress Only)",
+          "+3 To Sorceress Skill Levels",
+          "+5 To Mana After Each Kill",
+          "All Resistances +20",
+          "25% Chance To Cast Level 1 Teleport When Struck",
+          "+30% Faster Cast Rate",
+          "+20 To Vitality",
+          "+20 To Energy",
+          "+20% Enhanced Defense",
+          "50% Better Chance Of Getting Magic Items"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Harlequin Crest",
+      "type": "Shako",
+      "file": "/assets/items/harlequin_crest.webp",
+      "stats": {
+        "common": [
+          "Defense: 98-141",
+          "Required Level: 62",
+          "Required Strength: 50",
+          "Durability: 12"
+        ],
+        "magic": [
+          "+2 To All Skills",
+          "+1-148 To Life (+1.5 Per Character Level)",
+          "+1-148 To Mana (+1.5 Per Character Level)",
+          "Physical Damage Received Reduced By 10%",
+          "50% Better Chance of Getting Magic Items",
+          "+2 To All Attributes"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Windforce",
+      "type": "Hydra Bow",
+      "file": "/assets/items/windforce.png",
+      "stats": {
+        "common": [
+          "Two-Hand Damage: 35 to (241-547)",
+          "Required Level: 73",
+          "Required Strength: 134",
+          "Required Dexterity: 167",
+          "Bow Class - Fast Attack Speed"
+        ],
+        "magic": [
+          "+250% Enhanced Damage",
+          "+3-309 To Maximum Damage (+3.125 Per Character Level)",
+          "20% Increased Attack Speed",
+          "6-8% Mana Stolen Per Hit",
+          "Heal Stamina Plus 30%",
+          "+10 To Strength",
+          "+5 To Dexterity",
+          "Knockback"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Stormlash",
+      "type": "Scourge",
+      "file": "/assets/items/stormlash.png",
+      "stats": {
+        "common": [
+          "One-Hand Damage: (10-12) To (272-320)",
+          "Required Level: 82",
+          "Required Strength: 125",
+          "Required Dexterity: 77",
+          "Durability: 65",
+          "Mace Class - Fast Attack Speed"
+        ],
+        "magic": [
+          "+240-300% Enhanced Damage",
+          "+50% Damage to Undead",
+          "Adds 1-473 Lightning Damage",
+          "+30% Increased Attack Speed",
+          "+33% Chance of Crushing Blow",
+          "20% Chance To Cast Level 18 Tornado On Striking",
+          "15% Chance To Cast Level 10 Static Field On Striking",
+          "+3-9 Lightning Absorb",
+          "Attacker Takes Lightning Damage of 30"
+        ]
+      }
+    }
+]

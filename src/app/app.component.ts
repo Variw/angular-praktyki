@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet} from '@angular/router';
 import {DashboardComponent} from './components/dashboard/dashboard.component';
 import {NavComponent} from './components/nav/nav.component';
+import {DataService, Item} from './components/services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,15 @@ import {NavComponent} from './components/nav/nav.component';
   styleUrl: './app.component.css',
 
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Shop';
+  items: Item[] = [];
+  constructor(private dataService : DataService) { }
+  ngOnInit() : void {
+    this.dataService.getItems().subscribe((data) => {
+      this.items = data;
+      console.log(this.items);
+    })
+  }
 }
 

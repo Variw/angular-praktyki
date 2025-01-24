@@ -4,7 +4,16 @@ import { RouterOutlet} from '@angular/router';
 import { Router } from '@angular/router';
 import {DataModule} from '../data/data.module';
 
-type itemInformation = { id: number, name: string, file: string, description: string };
+type itemInformation = {
+  id: number,
+  name: string,
+  type: string,
+  file: string,
+  stats: {
+    common: string[],
+    magic: string[]
+  }
+};
 
 @Component({
   selector: 'app-item-detail',
